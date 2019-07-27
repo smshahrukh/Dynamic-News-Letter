@@ -1,8 +1,23 @@
 .leftSlidingPane {
-    background-color: #000;
+    background-color: #141C1E;
     color: #fff;
+    padding: 12px;
 }
 
 .slide-pane__header {
-    background-color: #000;
+    background-color: #141C1E;
+
+}
+
+.close_slider_button {
+    background: #1e3030;
+    width: 15px;
+    height: 60px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: calc(25% - 60px);
+    transform: translateY(-50%);
+    margin-left: 60px;
+    padding: 18px 1px;
+    border-radius: 0px 6px 6px 0;
 }
