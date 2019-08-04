@@ -3,6 +3,7 @@ import Modal from 'react-modal';
 import SlidingPane from 'react-sliding-pane';
 import SlideHeader from './slideHeader';
 import SlideContent from './slideContent';
+import BackgroundImages from './backgroundImages';
 
 import 'react-sliding-pane/dist/react-sliding-pane.css';
 import './slidingPane.scss';
@@ -20,6 +21,12 @@ class SlidingImagePane extends Component {
     }
  
     render() {
+        const {
+            selectedMenuOption
+        } = this.props;
+        const selectedOptionContent = {
+            "background": <BackgroundImages />,
+        }[selectedMenuOption];
         return <div ref={ref => this.el = ref}>
             <div className="close_slider_button">
                 <div onClick={ () => this.setState({ isPaneOpenLeft: true }) }>
@@ -30,11 +37,11 @@ class SlidingImagePane extends Component {
                 className="leftSlidingPane"
                 isOpen={ this.state.isPaneOpenLeft }
                 from='left'
-                width='400px'
+                width='350px'
                 onRequestClose={ () => this.setState({ isPaneOpenLeft: false }) }>
                 <div>
                     <SlideHeader />
-                    <SlideContent />
+                    <SlideContent content={selectedOptionContent} />
 
                 </div>
             </SlidingPane>
