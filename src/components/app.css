@@ -1,4 +1,9 @@
 
+.flexDirectionColumn {
+  display: flex;
+  flex-direction: column;
+}
+
 .app {
   background-color: #ececec;
 }

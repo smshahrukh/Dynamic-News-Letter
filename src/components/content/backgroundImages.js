@@ -33,10 +33,9 @@ export default class BackgroundImages extends Component {
                   ref={provided.innerRef}
                   {...provided.draggableProps}
                   {...provided.dragHandleProps}
+                  className='draggableThumb'
                 >
-                  <div className='imageThumb'>
-                    <img src={image.url} />
-                  </div>
+                  <img src={image.url} />
                 </div>
               )}
             </Draggable>

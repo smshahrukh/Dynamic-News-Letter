@@ -1,9 +1,8 @@
 .closedLeftMenu {
-    position: fixed;
+    position: absolute;
     left: 0;
-    top: 60px;
     width: 60px;
-    height: calc(100% - 60px);
+    height: 100%;
     background-color: #1E3030;
 }
 

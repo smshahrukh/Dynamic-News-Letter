@@ -8,7 +8,7 @@ export default class SlideContent extends Component {
             content
         } = this.props;
         return (
-            <div> { content } </div>
+            <React.Fragment> { content } </React.Fragment>
         )
     }
 }
